@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 SEÇİM ANKETİ</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <div class="bg"><img src="assets/img/bg.jpg" /></div>
+
+    <div class="ysk">
+        <div class="yskLogo"><img src="assets/img/ysk.png" alt=""></div>
+        <div class="sagTaraf">
+            <div class="text">YÜKSEK SEÇİM KURULU</div>
+            <div class="info">CUMHURBAŞKANLIĞI SEÇİMİ</div>
+        </div>
+    </div>
+
+    <div class="adayListesi">
+        
+        <div class="aday" id="candidate-a">
+            <div class="gorsel">
+                <div class="gorselBox">
+                    <img src="assets/img/adaylar/recepTayyipErdogan.png"/>
+                </div>
+            </div>
+            <div class="adSoyad">RECEP TAYYİP<br/>ERDOĞAN</div>
+            <div class="cizgi"><hr></div>
+            <div class="oyVer"><div class="yuvarlak" onclick="vote('a')"><span>EVET</span></div></div>
+            <div class="oyOrani"><div class="yuzdelik"><div class="hesapla" id="rte"></div></div></div>
+            <div class="veriler">
+                <div class="yuzdeDegeri">%<span id="result-a">0</span></div>
+                <div class="oySayisi"><span id="result-a-oy">0</span> Oy</div>
+            </div>
+        </div>
+        
+        <div class="aday" id="candidate-b">
+            <div class="gorsel">
+                <div class="gorselBox">
+                    <img class="muharremInce" src="assets/img/adaylar/muharremInce.png"/>
+                </div>
+            </div>
+            <div class="adSoyad">MUHARREM<br/>İNCE</div>
+            <div class="cizgi"><hr></div>
+            <div class="oyVer"><div class="yuvarlak" onclick="vote('b')"><span>EVET</span></div></div>
+            <div class="oyOrani"><div class="yuzdelik"><div class="hesapla" id="mi"></div></div></div>
+            <div class="veriler">
+                <div class="yuzdeDegeri">%<span id="result-b">0</span></div>
+                <div class="oySayisi"><span id="result-b-oy">0</span> Oy</div>
+            </div>
+        </div>
+        
+        <div class="aday" id="candidate-c">
+            <div class="gorsel">
+                <div class="gorselBox">
+                    <img src="assets/img/adaylar/kemalKilicdaroglu.png"/>
+                </div>
+            </div>
+            <div class="adSoyad">KEMAL<br/>KILIÇDAROĞLU</div>
+            <div class="cizgi"><hr></div>
+            <div class="oyVer"><div class="yuvarlak" onclick="vote('c')"><span>EVET</span></div></div>
+            <div class="oyOrani"><div class="yuzdelik"><div class="hesapla" id="kk"></div></div></div>
+            <div class="veriler">
+                <div class="yuzdeDegeri">%<span id="result-c">0</span></div>
+                <div class="oySayisi"><span id="result-c-oy">0</span> Oy</div>
+            </div>
+        </div>
+        
+        <div class="aday" id="candidate-d">
+            <div class="gorsel">
+                <div class="gorselBox">
+                    <img src="assets/img/adaylar/sinanOgan.png"/>
+                </div>
+            </div>
+            <div class="adSoyad">SİNAN<br/>OĞAN</div>
+            <div class="cizgi"><hr></div>
+            <div class="oyVer"><div class="yuvarlak" onclick="vote('d')"><span>EVET</span></div></div>
+            <div class="oyOrani"><div class="yuzdelik"><div class="hesapla" id="so"></div></div></div>
+            <div class="veriler">
+                <div class="yuzdeDegeri">%<span id="result-d">0</span></div>
+                <div class="oySayisi"><span id="result-d-oy">0</span> Oy</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="kazananAday">
+        <span class="text">Kazanan Aday :</span>
+        <span class="adayAdSoyad" id="kazananAday"></span>
+    </div>
+
+
+    <script src="assets/js/index.js"></script>
+
+</body>
+</html>
